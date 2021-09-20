@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/menuMovie"
+       android:title="Movie"
+       android:icon="@drawable/ic_movies_24"/>
+
+
+    <item android:id="@+id/menuTvshow"
+        android:title="TvShow"
+        android:icon="@drawable/ic_tv_24"/>
+
+
+    <item android:id="@+id/menuFavorite"
+        android:title="Favorite"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/purple_200"
+        android:id="@+id/card_view">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="170dp"
+                 android:scaleType="centerCrop"
+                 android:id="@+id/movie_img"
+                 android:src="@drawable/ic_launcher_background"/>
+
+              <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:textColor="@color/white"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="18sp"
+                     android:id="@+id/movie_title"
+                     android:text="TITLE"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:weightSum="100">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="90"
+                         android:textSize="14sp"
+                         android:text="Rilis Date"
+                         android:textColor="@color/white"
+                         android:id="@+id/movieRilis"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="10"
+                         android:textSize="14sp"
+                         android:textColor="@color/white"
+                         android:text="Action"
+                         android:id="@+id/movieVote"
+                         android:gravity="center"/>
+                 </LinearLayout>
+              </LinearLayout>
+         </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
