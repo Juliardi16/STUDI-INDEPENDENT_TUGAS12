@@ -3,56 +3,92 @@ package com.example.moviedb.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+@Entity(tableName = "movie")
 public class Result implements Parcelable {
+    @ColumnInfo(name = "adult")
     @SerializedName("adult")
     @Expose
     private Boolean adult;
+
+    @ColumnInfo(name = "backdrop_path")
     @SerializedName("backdrop_path")
     @Expose
     private String backdropPath;
+
+    @ColumnInfo(name = "genre_ids")
     @SerializedName("genre_ids")
     @Expose
-    private List<Integer> genreIds = null;
+    private List<Integer>genreIds;
+
+    @PrimaryKey
     @SerializedName("id")
     @Expose
     private Integer id;
+
+    @ColumnInfo(name = "original_language")
     @SerializedName("original_language")
     @Expose
     private String originalLanguage;
+
+    @ColumnInfo(name = "original_title")
     @SerializedName("original_title")
     @Expose
     private String originalTitle;
+
+    @ColumnInfo(name = "overview")
     @SerializedName("overview")
     @Expose
     private String overview;
+
+    @ColumnInfo(name = "popularity")
     @SerializedName("popularity")
     @Expose
     private Double popularity;
+
+    @ColumnInfo(name = "poster_path")
     @SerializedName("poster_path")
     @Expose
     private String posterPath;
+
+    @ColumnInfo(name = "release_date")
     @SerializedName("release_date")
     @Expose
     private String releaseDate;
+
+    @ColumnInfo(name = "title")
     @SerializedName("title")
     @Expose
     private String title;
+
+    @ColumnInfo(name = "video")
     @SerializedName("video")
     @Expose
     private Boolean video;
+
+    @ColumnInfo(name = "vote_average")
     @SerializedName("vote_average")
     @Expose
     private String voteAverage;
+
+    @ColumnInfo(name = "vote_count")
     @SerializedName("vote_count")
     @Expose
     private Integer voteCount;
 
-    protected Result(Parcel in) {
+    public Result(){
+
+    }
+
+    public Result(Parcel in) {
         byte tmpAdult = in.readByte();
         adult = tmpAdult == 0 ? null : tmpAdult == 1;
         backdropPath = in.readString();

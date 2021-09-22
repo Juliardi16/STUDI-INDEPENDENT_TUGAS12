@@ -55,6 +55,6 @@
         app:layout_anchor="@id/app_bar"
         app:backgroundTint="@color/purple_700"
         app:layout_anchorGravity="bottom|end"
-        android:src="@drawable/ic__favorite_24"/>
+        app:srcCompat="@drawable/ic_baseline_favorite_24"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -3,7 +3,6 @@ package com.example.moviedb.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -19,23 +19,26 @@ import com.example.moviedb.DetailMovieActivity;
 import com.example.moviedb.R;
 import com.example.moviedb.model.Result;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
-    public static final String DATA_MOVIE = "datamovie";
-    public static final String DATA_EXTRA = "dataextra";
 
     public static final String IMAGE_URL_BASE_PATH ="https://image.tmdb.org/t/p/w500/";
 
-    private List<Result> resultslist;
-    private  int rowLayout;
+    private List<Result> resultslist =new ArrayList<>();
+    private int Rowlayout;
     private Context context;
 
-    public MovieAdapter(List<Result> resultslist, int rowLayout, Context context) {
+    public MovieAdapter(List<Result> resultslist,int rowlayout, Context context) {
         this.resultslist = resultslist;
-        this.rowLayout = rowLayout;
+        this.Rowlayout = rowlayout;
         this.context = context;
     }
+
+    public MovieAdapter(FragmentActivity activity, List<Result> result) {
+    }
+
 
     @NonNull
     @Override
@@ -52,6 +55,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         holder.title.setText(resultslist.get(position).getTitle());
         holder.tanggalRilis.setText(resultslist.get(position).getReleaseDate());
         holder.voteAverage.setText(resultslist.get(position).getVoteAverage());
+
+
         holder.cvKlik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,20 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MovieDB/app/src/main/res/drawable-v24/ic__favorite_red.xml" value="0.21574074074074073" />
+        <entry key="..\:/MovieDB/app/src/main/res/drawable/ic__favorite_24.xml" value="0.221025641025641" />
         <entry key="..\:/MovieDB/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.22083333333333333" />
         <entry key="..\:/MovieDB/app/src/main/res/drawable/ic_favorite_border_24.xml" value="0.22083333333333333" />
         <entry key="..\:/MovieDB/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.13152610441767068" />
         <entry key="..\:/MovieDB/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.153515625" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_detail.xml" value="0.2046875" />
-        <entry key="..\:/MovieDB/app/src/main/res/layout/activity_detail_movie.xml" value="0.2046875" />
+        <entry key="..\:/MovieDB/app/src/main/res/layout/activity_detail_movie.xml" value="0.22" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_favorite.xml" value="0.17798913043478262" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_movie.xml" value="0.17798913043478262" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/activity_tv_show.xml" value="0.17798913043478262" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/content_scrolling.xml" value="0.25" />
+        <entry key="..\:/MovieDB/app/src/main/res/layout/favorite_list_item.xml" value="0.14" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_favorite.xml" value="0.22" />
-        <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_favorite1.xml" value="0.1693840579710145" />
+        <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_favorite1.xml" value="0.22" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_movie.xml" value="0.19" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_movie1.xml" value="0.21" />
         <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_movie2.xml" value="0.1693840579710145" />
